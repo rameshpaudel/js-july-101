@@ -12,11 +12,21 @@
     <h1>Loops</h1>
 
     <script>
+        var question = prompt("Enter a message")
 
+        //We can get the length of the string
+        var questionSize = question.length;
+
+        //We can get the specific position's character in the variable
+        var thePostionOfTheCharacter = 10
+        question[thePostionOfTheCharacter]
         //For Loop
-        for( var i = 0; i < 100; i++){
-            console.log(i)
+        for( var i = 0; i < questionSize; i++){
+            //Breaking each and every character
+            console.log(question[i])
         }
+
+
     </script>
 </body>
 
