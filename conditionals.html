@@ -13,16 +13,24 @@
 
     <script>
 
-        var firstNum = 20;
-        var secondNum = 40;
+        var firstNum = prompt("Enter a first Number");
+        var secondNum = prompt("Enter second number");
 
-        if (firstNum > secondNum) {
+        var isNumberFirst = !isNaN(firstNum)
+        var isNumberSecond = !isNaN(secondNum);
+        
+        if(isNumberFirst && isNumberSecond){
+            if (firstNum > secondNum) {
             console.log('First number is greater')
-        } else if (firstNum === secondNum) {
-            console.log("Both numbers are equal")
-        } else {
-            console.log('Second Number is greater')
+            } else if (firstNum === secondNum) {
+                console.log("Both numbers are equal")
+            } else {
+                console.log('Second Number is greater')
+            }     
+        }else{
+            alert("Both of the inputs must be a number")
         }
+       
 
     </script>
 </body>
